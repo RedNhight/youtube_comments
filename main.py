@@ -8,7 +8,6 @@ from automatization.likes import YoutubeLiker
 import random
 from time import sleep
 from multiprocessing import Pool
-from utils.checking_proxy import checkout_proxy
 
 tyl = TestYoutubeLiker()
 
