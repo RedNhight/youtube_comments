@@ -23,14 +23,14 @@ def read_channels():
 
 
 def main(url: str, proxy: str, text_for: str, num_of_account):
-    print(f'Данные \nСсыка: {url}\n текст: {text_for} \nНомер аккаунта: {num_of_account}. ')
     ca = CheckAvailability(url, proxy)
     ca.pars_the_last_video()
     compared_video = ca.compare_id()
-    print(url)
     if compared_video == 'NEW_VIDEO':
+        print('New video')
         print(ca.video_id)
         tyl.start_work(ca.video_id, text_for, num_of_account)
+        print('Video was commented. ')
     elif compared_video == 'OLD_VIDEO':
         print(ca.video_id)
         print('OLD')
