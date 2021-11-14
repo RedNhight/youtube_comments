@@ -4,12 +4,18 @@ from automatization.likes import YoutubeLiker
 class TestYoutubeLiker:
     def __init__(self):
         self.yl_first = YoutubeLiker()
+        print('Браузер открыт')
         self.yl_second = YoutubeLiker()
+        print('Второй браузер открыт. ')
         self.yl_third = YoutubeLiker()
+        print('3-й браузер открыт.')
 
         self.yl_first.login('skriptik101@gmail.com', 'skriptik$2021', '+380999324388')
+        print('Первый аккаунт залогинен! ')
         self.yl_second.login('skriptik102@gmail.com', 'skriptik$2021', '+380999324388')
+        print('Второй аккаунт залогинен! ')
         self.yl_third.login('skriptik103@gmail.com', 'skriptik$2021', '+380999324388')
+        print('3-й аккаунт залогинен!')
 
     def start_work(self, video_url, text_for, channel_num):
         if channel_num == 0:
