@@ -2,6 +2,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as ec
@@ -17,6 +18,8 @@ class YoutubeLiker:
 
         # Options.
         # self.useragent = UserAgent()
+        self.opt = Options()
+        self.opt.headless = True
         self.profile = webdriver.FirefoxProfile()
         # self.profile.set_preference("network.proxy.type", 1)
         # self.profile.set_preference("network.proxy.http", str(self.PROXY[0]))
@@ -27,7 +30,6 @@ class YoutubeLiker:
         # self.profile.set_preference("intl.accept_languages", "en-en")
         # self.profile.set_preference("media.volume_scale", "0.0")
         self.profile.update_preferences()
-        #
         self.firecap = webdriver.DesiredCapabilities.FIREFOX
         # self.firecap['marionette'] = True
         # self.firecap['proxy'] = {
@@ -37,6 +39,7 @@ class YoutubeLiker:
         # }
         self.driver = webdriver.Firefox(firefox_profile=self.profile,
                                         proxy=self.firecap,
+                                        options=self.opt
                                         )
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver, 5)
