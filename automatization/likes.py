@@ -18,8 +18,8 @@ class YoutubeLiker:
 
         # Options.
         # self.useragent = UserAgent()
-        # self.opt = Options()
-        # self.opt.headless = True
+        self.opt = Options()
+        self.opt.headless = True
         self.profile = webdriver.FirefoxProfile()
         # self.profile.set_preference("network.proxy.type", 1)
         # self.profile.set_preference("network.proxy.http", str(self.PROXY[0]))
@@ -39,7 +39,7 @@ class YoutubeLiker:
         # }
         self.driver = webdriver.Firefox(firefox_profile=self.profile,
                                         proxy=self.firecap,
-                                        # options=self.opt
+                                        options=self.opt
                                         )
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver, 5)
