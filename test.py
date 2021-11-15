@@ -3,9 +3,14 @@ from automatization.likes import YoutubeLiker
 
 class TestYoutubeLiker:
     def __init__(self):
-        self.first_data = ['skriptik101@gmail.com', 'skriptik$2021']
-        self.second_data = ['skriptik102@gmail.com', 'skriptik$2021']
-        self.third_data = ['skriptik103@gmail.com', 'skriptik$2021']
+        # self.first_data = ['skriptik101@gmail.com', 'skriptik$2021']
+        # self.second_data = ['skriptik102@gmail.com', 'skriptik$2021']
+        # self.third_data = ['skriptik103@gmail.com', 'skriptik$2021']
+        with open('files/accounts.txt', 'r') as accounts:
+            rd = accounts.read().split('\n')
+            self.first_data = rd[0].split(':')
+            self.second_data = rd[1].split(':')
+            self.third_data = rd[2].split(':')
 
         self.yl_first = YoutubeLiker()
         print('Браузер открыт')
