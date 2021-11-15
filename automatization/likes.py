@@ -47,6 +47,7 @@ class YoutubeLiker:
 
     def login(self, mail, passwd):
         mail_field = self.wait.until(ec.presence_of_element_located((By.ID, 'identifierId')))
+        print(mail_field.text)
         mail_field.click()
         mail_field.send_keys(mail)
         sleep(0.5)
