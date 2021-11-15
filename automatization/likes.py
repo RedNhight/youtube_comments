@@ -18,8 +18,8 @@ class YoutubeLiker:
 
         # Options.
         # self.useragent = UserAgent()
-        self.opt = Options()
-        self.opt.headless = True
+        # self.opt = Options()
+        # self.opt.headless = True
         self.profile = webdriver.FirefoxProfile()
         # self.profile.set_preference("network.proxy.type", 1)
         # self.profile.set_preference("network.proxy.http", str(self.PROXY[0]))
@@ -39,20 +39,20 @@ class YoutubeLiker:
         # }
         self.driver = webdriver.Firefox(firefox_profile=self.profile,
                                         proxy=self.firecap,
-                                        options=self.opt
+                                        # options=self.opt
                                         )
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver, 5)
         self.driver.get(self.url)
 
-    def login(self, mail, passwd, phone_number):
+    def login(self, mail, passwd):
         mail_field = self.wait.until(ec.presence_of_element_located((By.ID, 'identifierId')))
         mail_field.click()
         mail_field.send_keys(mail)
         sleep(0.5)
         mail_field.send_keys(Keys.ENTER)
 
-        sleep(1)
+        sleep(3)
         chains = ActionChains(self.driver)
         chains.send_keys(passwd + Keys.ENTER).perform()
         sleep(1)
@@ -68,21 +68,32 @@ class YoutubeLiker:
         except Exception as ex:
             pass
 
+        try:
+            welcome_msg = self.driver.find_element_by_xpath('/html/body/c-wiz/div/div[2]/c-wiz/c-wiz/div/div[3]/div/div/header/h1')
+            print(welcome_msg.text)
+        except Exception as ex:
+            pass
+
     def like_the_video(self, id_of_the_video, text_for_the_video):
         youtube_url = 'https://www.youtube.com/watch?v=' + id_of_the_video
         self.driver.get(youtube_url)
         sleep(5)
         try:
-            like_btn = self.wait.until(ec.element_to_be_clickable((By.XPATH, '/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[6]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-toggle-button-renderer[1]/a')))
+            like_btn = self.wait.until(ec.element_to_be_clickable((By.XPATH, '/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[6]/div[2]/ytd-video-primary-info-renderer/div/div/div[3]/div/ytd-menu-renderer/div/ytd-toggle-button-renderer[1]/a/yt-icon-button/button/yt-icon')))
             like_btn.click()
         except Exception as ex:
             print(ex)
-        self.driver.execute_script('window.scrollBy(0, 300)', '')
-        comment_field = self.wait.until(ec.element_to_be_clickable((By.ID, 'simplebox-placeholder')))
-        comment_field.click()
-        print(comment_field.text)
-        chains = ActionChains(self.driver)
-        chains.send_keys(text_for_the_video).perform()
+        try:
+            sleep(2)
+            self.driver.execute_script('window.scrollBy(0, 300)', '')
+            comment_field = self.wait.until(ec.presence_of_element_located((By.ID, 'simplebox-placeholder')))
+            comment_field.click()
+
+            sleep(1)
+            chains = ActionChains(self.driver)
+            chains.send_keys(text_for_the_video).perform()
+        except Exception as ex:
+            pass
 
         submit_btn = self.driver.find_elements_by_id('text')
         for submit in submit_btn:
