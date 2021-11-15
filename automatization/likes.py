@@ -18,8 +18,8 @@ class YoutubeLiker:
 
         # Options.
         # self.useragent = UserAgent()
-        # self.opt = Options()
-        # self.opt.headless = True
+        self.opt = Options()
+        self.opt.headless = True
         self.profile = webdriver.FirefoxProfile()
         # self.profile.set_preference("network.proxy.type", 1)
         # self.profile.set_preference("network.proxy.http", str(self.PROXY[0]))
@@ -39,7 +39,7 @@ class YoutubeLiker:
         # }
         self.driver = webdriver.Firefox(firefox_profile=self.profile,
                                         proxy=self.firecap,
-                                        # options=self.opt
+                                        options=self.opt
                                         )
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver, 5)
@@ -72,7 +72,8 @@ class YoutubeLiker:
             welcome_msg = self.driver.find_element_by_xpath('/html/body/c-wiz/div/div[2]/c-wiz/c-wiz/div/div[3]/div/div/header/h1')
             print(welcome_msg.text)
         except Exception as ex:
-            pass
+            print('Аккаунт не был залогинен. ')
+            self.driver.close()
 
     def like_the_video(self, id_of_the_video, text_for_the_video):
         youtube_url = 'https://www.youtube.com/watch?v=' + id_of_the_video
