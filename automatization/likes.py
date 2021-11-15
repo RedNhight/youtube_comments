@@ -50,7 +50,9 @@ class YoutubeLiker:
         mail_field.click()
         mail_field.send_keys(mail)
         sleep(0.5)
-        mail_field.send_keys(Keys.ENTER)
+        submit_btn = self.driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/div[2]')
+        submit_btn.click()
+        # mail_field.send_keys(Keys.ENTER)
 
         try:
             name_field = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[1]/div/h1/span')))
