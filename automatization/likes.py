@@ -39,7 +39,7 @@ class YoutubeLiker:
         # }
         self.driver = webdriver.Firefox(firefox_profile=self.profile,
                                         proxy=self.firecap,
-                                        options=self.opt
+                                        # options=self.opt
                                         )
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver, 5)
@@ -51,6 +51,12 @@ class YoutubeLiker:
         mail_field.send_keys(mail)
         sleep(0.5)
         mail_field.send_keys(Keys.ENTER)
+
+        try:
+            name_field = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[1]/div/h1/span')))
+            print(name_field.text)
+        except Exception as ex:
+            print(ex)
 
         sleep(3)
         chains = ActionChains(self.driver)
