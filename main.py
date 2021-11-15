@@ -32,10 +32,13 @@ def read_channels():
     return [f, s, t]
 
 
-def main(url: str, proxy: str, txt_for: str, num_of_account):
-    ca = CheckAvailability(url, proxy)
+def main(url: str, txt_for: str, num_of_account):
+    ca = CheckAvailability(url)
+    print('Открываем парсер. ')
     ca.pars_the_last_video()
+    print('Парсим id. ')
     compared_video = ca.compare_id()
+    print('Сравниваем ID. ')
     if compared_video == 'NEW_VIDEO':
         print('New video')
         print(ca.video_id)
@@ -50,10 +53,9 @@ if __name__ == '__main__':
     while True:
         channels_list = read_channels()
         for i in range(len(channels_list)):
-            print('Номер аккаунта: ' + str(i))
             text_for = random.choice(read_comments()[i])
             for j in range(len(channels_list[i])):
-                print('Номер видео: ' + str(j))
-                main(channels_list[i][j], '', text_for, i)
+                print(channels_list[i][j])
+                main(channels_list[i][j], text_for, i)
             sleep(10)
         sleep(600)

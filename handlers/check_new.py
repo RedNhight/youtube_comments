@@ -4,13 +4,9 @@ from utils.pickle_read import PickleWork
 
 
 class CheckAvailability:
-    def __init__(self, url, proxy):
+    def __init__(self, url):
         self.video_id = ''
         self.url = url
-        proxs = {
-            'http': f'http://{proxy}',
-            'https': f'https://{proxy}',
-        }
         if '/videos' in self.url:
             self.r = requests.get(self.url)
         elif '/videos' not in self.url:
@@ -37,3 +33,4 @@ class CheckAvailability:
 if __name__ == '__main__':
     ca = CheckAvailability('https://www.youtube.com/c/ikakProsto')
     ca.pars_the_last_video()
+    print(ca.compare_id())
