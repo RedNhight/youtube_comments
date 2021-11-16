@@ -13,7 +13,7 @@ from time import sleep
 
 class YoutubeLiker:
     def __init__(self):
-        self.url = 'https://accounts.google.com/signin'
+        self.url = 'https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin'
 
         # Options.
         # self.useragent = UserAgent()
