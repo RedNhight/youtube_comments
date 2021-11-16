@@ -70,7 +70,7 @@ class YoutubeLiker:
             not_now.click()
         except Exception as ex:
             pass
-
+        print(self.driver.current_url)
         try:
             update = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/c-wiz[2]/c-wiz/div/div[1]/div/div/div/div[2]/div[3]/div/div[2]/div/span/span')))
             update.click()
