@@ -77,8 +77,10 @@ class YoutubeLiker:
             pass
 
         try:
-            welcome_msg = self.driver.find_element_by_xpath('/html/body/c-wiz/div/div[2]/c-wiz/c-wiz/div/div[3]/div/div/header/h1')
+            welcome_msg = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/c-wiz/div/div[2]/c-wiz/c-wiz/div/div[3]/div/div/header/h1')))
+            # welcome_msg = self.driver.find_element_by_xpath('/html/body/c-wiz/div/div[2]/c-wiz/c-wiz/div/div[3]/div/div/header/h1')
             print(welcome_msg.text)
+            print('Аккаунт залогинен')
         except Exception as ex:
             print('Аккаунт не был залогинен. ')
             self.driver.close()

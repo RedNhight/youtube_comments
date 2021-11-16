@@ -20,11 +20,11 @@ class TestYoutubeLiker:
         print('3-й браузер открыт.')
 
         self.yl_first.login(self.first_data[0], self.first_data[1])
-        print('Первый аккаунт залогинен! ')
+        # print('Первый аккаунт залогинен! ')
         self.yl_second.login(self.second_data[0], self.second_data[1])
-        print('Второй аккаунт залогинен! ')
+        # print('Второй аккаунт залогинен! ')
         self.yl_third.login(self.third_data[0], self.third_data[1])
-        print('3-й аккаунт залогинен!')
+        # print('3-й аккаунт залогинен!')
 
     def start_work(self, video_url, text_for, channel_num):
         with open('logs/info.txt', 'a') as logfile:
