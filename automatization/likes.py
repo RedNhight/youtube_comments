@@ -56,8 +56,6 @@ class YoutubeLiker:
         # submit_first.click()
 
         sleep(3)
-        txttxt = self.driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/div')
-        print(txttxt.text)
         passwd_field = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input')))
         passwd_field.click()
         # passwd_field.send_keys(passwd)
@@ -77,7 +75,7 @@ class YoutubeLiker:
             update.click()
         except Exception as ex:
             pass
-        print(self.driver.current_url)
+        self.driver.get('https://myaccount.google.com/?pli=1')
         try:
             welcome_msg = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/c-wiz/div/div[2]/c-wiz/c-wiz/div/div[3]/div/div/header/h1')))
             # welcome_msg = self.driver.find_element_by_xpath('/html/body/c-wiz/div/div[2]/c-wiz/c-wiz/div/div[3]/div/div/header/h1')
