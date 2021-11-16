@@ -39,7 +39,7 @@ class YoutubeLiker:
         # }
         self.driver = webdriver.Firefox(firefox_profile=self.profile,
                                         proxy=self.firecap,
-                                        options=self.opt
+                                        # options=self.opt
                                         )
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver, 5)
@@ -51,20 +51,14 @@ class YoutubeLiker:
         mail_field.click()
         mail_field.send_keys(mail)
         sleep(0.5)
-        submit_btn = self.driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span')
-        submit_btn.click()
-        # mail_field.send_keys(Keys.ENTER)
-
-        try:
-            name_field = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[1]/div/h1/span')))
-            print(name_field.text)
-        except Exception as ex:
-            print(ex)
-
+        mail_field.send_keys(Keys.ENTER)
         sleep(3)
-        chains = ActionChains(self.driver)
-        chains.send_keys(passwd + Keys.ENTER).perform()
-        sleep(1)
+        passwd_field = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input')))
+        passwd_field.click()
+        passwd_field.send_keys(passwd + Keys.ENTER)
+        # chains = ActionChains(self.driver)
+        # chains.send_keys(passwd + Keys.ENTER).perform()
+        # sleep(1)
         try:
             not_now = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div/c-wiz/div/div/div/div[2]/div[4]/div[1]/button/span')))
             not_now.click()
