@@ -25227,3 +25227,189 @@ Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1637030836129	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.U9voI2BytP99"
+*** You are running in headless mode.
+1637030838079	Marionette	INFO	Listening on port 38143
+1637030838138	Marionette	WARN	TLS certificate errors will be ignored for this session
+1637030839634	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.DQ3rzaYuhSg9"
+*** You are running in headless mode.
+JavaScript warning: https://accounts.google.com/signin line 1 > eval line 3054 > eval line 1 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://accounts.google.com/signin line 1 > eval line 3054 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1637030841629	Marionette	INFO	Listening on port 46045
+1637030841642	Marionette	WARN	TLS certificate errors will be ignored for this session
+1637030842890	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Jn66HpxrgU0v"
+*** You are running in headless mode.
+JavaScript warning: https://accounts.google.com/signin line 1 > eval line 783 > eval line 1 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://accounts.google.com/signin line 1 > eval line 783 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1637030844930	Marionette	INFO	Listening on port 44159
+1637030844996	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://accounts.google.com/signin line 1 > eval line 4152 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://accounts.google.com/signin line 1 > eval line 4152 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://accounts.google.com/signin line 1 > eval line 6920 > eval line 1 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://accounts.google.com/signin line 1 > eval line 6920 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://accounts.google.com/signin line 1 > eval line 7673 > eval line 1 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://accounts.google.com/signin line 1 > eval line 7673 > eval line 1 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://accounts.google.com/signin line 1 > eval line 6221 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://accounts.google.com/signin line 1 > eval line 6221 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1637030913872	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wAtoaEDXJHNT"
+Gtk-Message: 02:48:34.073: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:48:35.393: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:48:35.523: Failed to load module "appmenu-gtk-module"
+1637030916171	Marionette	INFO	Listening on port 45779
+1637030916181	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637030917815	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HACYwniKGGoJ"
+Gtk-Message: 02:48:38.038: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:48:39.367: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:48:39.511: Failed to load module "appmenu-gtk-module"
+1637030920032	Marionette	INFO	Listening on port 44433
+1637030920132	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637030921638	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.O8RTcqMSDlSP"
+Gtk-Message: 02:48:41.906: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:48:43.224: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:48:43.376: Failed to load module "appmenu-gtk-module"
+1637030923974	Marionette	INFO	Listening on port 43577
+1637030924047	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+console.error: "Error sending event: display-change"
+console.error: ({})
+[Exception... "Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIEventListenerService.getListenerInfoFor]"  nsresult: "0x80070057 (NS_ERROR_ILLEGAL_VALUE)"  location: "JS frame :: resource://devtools/server/actors/inspector/event-collector.js :: getDOMListeners :: line 266"  data: no]: getDOMListeners@resource://devtools/server/actors/inspector/event-collector.js:266:22
+getListeners@resource://devtools/server/actors/inspector/event-collector.js:334:28
+hasListeners@resource://devtools/server/actors/inspector/event-collector.js:227:17
+hasEventListeners@resource://devtools/server/actors/inspector/event-collector.js:800:21
+get _hasEventListeners@resource://devtools/server/actors/inspector/node.js:459:33
+form@resource://devtools/server/actors/inspector/node.js:262:7
+write@resource://devtools/shared/protocol/types.js:363:32
+types.addArrayType/write/<@resource://devtools/shared/protocol/types.js:220:33
+write@resource://devtools/shared/protocol/types.js:220:16
+write@resource://devtools/shared/protocol/Request.js:117:22
+write@resource://devtools/shared/protocol/Request.js:43:26
+_sendEvent@resource://devtools/shared/protocol/Actor.js:66:24
+initialize/<@resource://devtools/shared/protocol/Actor.js:46:16
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+_onReflows@resource://devtools/server/actors/inspector/walker.js:659:12
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+_startEventLoop@resource://devtools/server/actors/reflow.js:315:12
+notify@resource://gre/modules/Timer.jsm:62:17
+
+console.error: (new Error("Connection closed, pending request to server0.conn0.child2/domnode41, type getAllSelectors failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:256:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\ngetAllSelectors@resource://devtools/client/fronts/node.js:547:18\nfindNodeFront@resource://devtools/client/fronts/walker.js:549:48\n", "resource://devtools/shared/protocol/Front.js", 77))
+console.log: "getSources failed. Connection may have closed: Error: Connection closed, pending request to server0.conn0.child2/thread21, type sources failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:256:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\ngetSources@resource://devtools/client/fronts/thread.js:181:34\nSourceMapURLService.prototype._getLoadingPromise/this._loadingPromise<@resource://devtools/client/framework/source-map-url-service.js:85:56\n"
+console.error: "Tried to send a 'frameUpdate' event on an already destroyed actor 'frameTarget'"
+JavaScript error: resource://devtools/client/framework/toolbox.js, line 3047: TypeError: this.win is null
+JavaScript error: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountSettingsUi.ru.OiYAGV-j7MA.2019.O/am=gZbCVuc48BWb0QEAAAAAQAAPAAAAAAM8AEAAAAAA-AIEEGwvAAE/d=1/excm=_b,_tp,googleaccounthomeview/ed=1/dg=0/wt=2/esmo=1/rs=AOaEmlEJApxT1M0_BdT6Tc6uSzdhbOIBWA/m=_b,_tp, line 1648: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.gstatic.com/_/mss/boq-one-google/_/js/k=boq-one-google.OneGoogleWidgetUi.ru.broGVrKDcSM.es5.O/am=bAAAEA/d=1/excm=_b,_tp,appwidgetauthview/ed=1/dg=0/wt=2/esmo=1/rs=AM-SdHtn_rIX6gVv-g4rRadEengvx8NMqA/m=_b,_tp, line 643: NS_ERROR_NOT_INITIALIZED: 
+1637030937482	Marionette	INFO	Stopped listening on port 45779
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 174: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+1637030960167	Marionette	INFO	Stopped listening on port 43577
+1637030960594	Marionette	INFO	Stopped listening on port 44433
+1637031114625	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.tsiFiVFhOf8P"
+Gtk-Message: 02:51:54.827: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:51:56.063: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:51:56.224: Failed to load module "appmenu-gtk-module"
+1637031117005	Marionette	INFO	Listening on port 35767
+1637031117042	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637031118587	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.VvTbojBunarY"
+Gtk-Message: 02:51:58.810: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:52:00.143: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:52:00.276: Failed to load module "appmenu-gtk-module"
+1637031120999	Marionette	INFO	Listening on port 43047
+1637031121095	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637031122521	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ckUelDN6krBx"
+Gtk-Message: 02:52:02.743: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:52:04.121: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:52:04.253: Failed to load module "appmenu-gtk-module"
+1637031124925	Marionette	INFO	Listening on port 45955
+1637031124951	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+1637031173829	Marionette	INFO	Stopped listening on port 45955
+1637031174970	Marionette	INFO	Stopped listening on port 43047
+1637031175877	Marionette	INFO	Stopped listening on port 35767
+1637031232964	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.67gzIIl6uxDU"
+Gtk-Message: 02:53:53.166: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:53:54.433: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:53:54.579: Failed to load module "appmenu-gtk-module"
+1637031235212	Marionette	INFO	Listening on port 36723
+1637031235270	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637031236847	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.DiT2VRWBAsru"
+Gtk-Message: 02:53:57.082: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:53:58.392: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:53:58.527: Failed to load module "appmenu-gtk-module"
+1637031239251	Marionette	INFO	Listening on port 39091
+1637031239260	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637031240747	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.vp99myZ686I8"
+Gtk-Message: 02:54:00.990: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:54:02.361: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:54:02.479: Failed to load module "appmenu-gtk-module"
+1637031243014	Marionette	INFO	Listening on port 44345
+1637031243063	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1637061765130	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.cdgFGIoajafY"
+Gtk-Message: 11:22:45.360: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:22:46.730: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:22:46.868: Failed to load module "appmenu-gtk-module"
+1637061767431	Marionette	INFO	Listening on port 43227
+1637061767467	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637061769074	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.nFQAlt8ZNsD4"
+Gtk-Message: 11:22:49.310: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:22:50.623: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:22:50.751: Failed to load module "appmenu-gtk-module"
+1637061771399	Marionette	INFO	Listening on port 40975
+1637061771482	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637061772888	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.cFyj1IHS56xk"
+Gtk-Message: 11:22:53.109: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:22:54.459: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:22:54.581: Failed to load module "appmenu-gtk-module"
+1637061775246	Marionette	INFO	Listening on port 43873
+1637061775297	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

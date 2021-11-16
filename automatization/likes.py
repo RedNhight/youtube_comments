@@ -42,20 +42,25 @@ class YoutubeLiker:
                                         options=self.opt
                                         )
         self.driver.maximize_window()
-        self.wait = WebDriverWait(self.driver, 20)
+        self.wait = WebDriverWait(self.driver, 5)
         self.driver.get(self.url)
 
     def login(self, mail, passwd):
         mail_field = self.wait.until(ec.presence_of_element_located((By.ID, 'identifierId')))
-        print(mail_field.text)
         mail_field.click()
         mail_field.send_keys(mail)
-        sleep(0.5)
-        mail_field.send_keys(Keys.ENTER)
+        submit_first = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span')))
+        submit_first.click()
+
+        myname_pars = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[1]/div/h1/span')))
+        print(myname_pars.text)
+
         sleep(3)
         passwd_field = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input')))
         passwd_field.click()
-        passwd_field.send_keys(passwd + Keys.ENTER)
+        passwd_field.send_keys(passwd)
+        submit_second = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span')))
+        submit_second.click()
         # chains = ActionChains(self.driver)
         # chains.send_keys(passwd + Keys.ENTER).perform()
         # sleep(1)
