@@ -46,6 +46,7 @@ class YoutubeLiker:
         self.driver.get(self.url)
 
     def login(self, mail, passwd):
+        print(self.driver.current_url)
         mail_field = self.wait.until(ec.presence_of_element_located((By.ID, 'identifierId')))
         mail_field.click()
         mail_field.send_keys(mail)
@@ -56,14 +57,17 @@ class YoutubeLiker:
 
         sleep(3)
         print(self.driver.current_url)
+        txttxt = self.driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/div')
+        print(txttxt.text)
         passwd_field = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input')))
         passwd_field.click()
-        passwd_field.send_keys(passwd)
-        submit_second = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span')))
-        submit_second.click()
-        # chains = ActionChains(self.driver)
-        # chains.send_keys(passwd + Keys.ENTER).perform()
-        # sleep(1)
+        # passwd_field.send_keys(passwd)
+        # submit_second = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span')))
+        # submit_second.click()
+        chains = ActionChains(self.driver)
+        chains.send_keys(passwd + Keys.ENTER).perform()
+        sleep(1)
+        print(self.driver.current_url)
         try:
             not_now = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div/c-wiz/div/div/div/div[2]/div[4]/div[1]/button/span')))
             not_now.click()
