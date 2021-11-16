@@ -6,7 +6,6 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as ec
-from fake_useragent import UserAgent
 
 # Other imports
 from time import sleep
@@ -39,7 +38,8 @@ class YoutubeLiker:
         # }
         self.driver = webdriver.Firefox(firefox_profile=self.profile,
                                         proxy=self.firecap,
-                                        options=self.opt
+                                        options=self.opt,
+                                        executable_path='/usr/local/bin/geckodriver'
                                         )
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver, 5)
