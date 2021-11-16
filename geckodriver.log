@@ -25413,3 +25413,51 @@ Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1637062334942	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.t4UkzYRolFBP"
+Gtk-Message: 11:32:15.157: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:32:16.489: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:32:16.606: Failed to load module "appmenu-gtk-module"
+1637062337105	Marionette	INFO	Listening on port 39619
+1637062337159	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637062338728	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wVUsirtFnf3z"
+Gtk-Message: 11:32:18.968: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:32:20.345: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:32:20.496: Failed to load module "appmenu-gtk-module"
+1637062341212	Marionette	INFO	Listening on port 45861
+1637062341256	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637062351803	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kMwgm0ScmtUS"
+Gtk-Message: 11:32:32.045: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:32:33.508: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:32:33.643: Failed to load module "appmenu-gtk-module"
+1637062354307	Marionette	INFO	Listening on port 42375
+1637062354333	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637062370571	Marionette	INFO	Stopped listening on port 39619
+1637062373688	Marionette	INFO	Stopped listening on port 45861
+1637062375494	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.m3oieDu0deSO"
+1637062375689	Marionette	INFO	Stopped listening on port 42375
+Gtk-Message: 11:32:55.711: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:32:57.034: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:32:57.169: Failed to load module "appmenu-gtk-module"
+1637062377862	Marionette	INFO	Listening on port 40203
+1637062377902	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637062380448	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.K9K29tljAHzz"
+Gtk-Message: 11:33:00.664: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:33:01.979: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:33:02.103: Failed to load module "appmenu-gtk-module"
+1637062382406	Marionette	INFO	Listening on port 39725
+1637062382467	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637062386344	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.uvCJr4GbcxDg"
+Gtk-Message: 11:33:06.584: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:33:07.961: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 11:33:08.088: Failed to load module "appmenu-gtk-module"
+1637062388334	Marionette	INFO	Listening on port 45027
+1637062388385	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637062416295	Marionette	INFO	Stopped listening on port 40203
+1637062417802	Marionette	INFO	Stopped listening on port 39725
+1637062421838	Marionette	INFO	Stopped listening on port 45027

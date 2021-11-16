@@ -46,14 +46,13 @@ class YoutubeLiker:
         self.driver.get(self.url)
 
     def login(self, mail, passwd):
+        body = self.driver.find_element_by_tag_name('body')
+        print(body.text)
         mail_field = self.wait.until(ec.presence_of_element_located((By.ID, 'identifierId')))
         mail_field.click()
-        mail_field.send_keys(mail)
-        submit_first = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span')))
-        submit_first.click()
-
-        myname_pars = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[1]/div/h1/span')))
-        print(myname_pars.text)
+        mail_field.send_keys(mail + Keys.ENTER)
+        # submit_first = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span')))
+        # submit_first.click()
 
         sleep(3)
         passwd_field = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input')))
