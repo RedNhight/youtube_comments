@@ -52,11 +52,11 @@ class YoutubeLiker:
         mail_field.send_keys(mail)
         sleep(1)
         mail_field.send_keys(Keys.ENTER)
-        print(self.driver.current_url)
         # submit_first = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span')))
         # submit_first.click()
 
         sleep(3)
+        print(self.driver.current_url)
         passwd_field = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input')))
         passwd_field.click()
         # passwd_field.send_keys(passwd)
