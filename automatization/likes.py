@@ -46,8 +46,9 @@ class YoutubeLiker:
         self.driver.get(self.url)
 
     def login(self, mail, passwd):
-        body = self.driver.find_element_by_tag_name('body')
-        print(body.text)
+        body = self.driver.find_elements_by_tag_name('input')
+        for b in body:
+            print(b.text)
         mail_field = self.wait.until(ec.presence_of_element_located((By.ID, 'identifierId')))
         mail_field.click()
         mail_field.send_keys(mail + Keys.ENTER)
