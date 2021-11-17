@@ -16,21 +16,16 @@ class YoutubeLiker:
         self.url = 'https://accounts.google.com/signin/v2/identifier'
 
         # Options.
-        # self.useragent = UserAgent()
         self.opt = Options()
         self.opt.headless = True
         self.profile = webdriver.FirefoxProfile()
-        # self.profile.set_preference("network.proxy.type", 1)
-        # self.profile.set_preference("network.proxy.http", str(self.PROXY[0]))
-        # self.profile.set_preference("network.proxy.http_port", int(self.PROXY[1]))
-        # self.profile.set_preference("general.useragent.override", self.useragent.firefox)
         self.profile.set_preference('dom.webdriver.enabled', False)
         self.profile.set_preference('useAutomationExtension', False)
-        # self.profile.set_preference("intl.accept_languages", "en-en")
-        # self.profile.set_preference("media.volume_scale", "0.0")
+        self.profile.set_preference("intl.accept_languages", "en-en")
+        self.profile.set_preference("media.volume_scale", "0.0")
         self.profile.update_preferences()
         self.firecap = webdriver.DesiredCapabilities.FIREFOX
-        # self.firecap['marionette'] = True
+        self.firecap['marionette'] = True
         # self.firecap['proxy'] = {
         #     'proxyType': 'MANUAL',
         #     'httpProxy': proxy,
@@ -38,7 +33,7 @@ class YoutubeLiker:
         # }
         self.driver = webdriver.Firefox(firefox_profile=self.profile,
                                         proxy=self.firecap,
-                                        options=self.opt,
+                                        # options=self.opt,
                                         executable_path='/usr/local/bin/geckodriver'
                                         )
         self.driver.maximize_window()
@@ -46,25 +41,26 @@ class YoutubeLiker:
         self.driver.get(self.url)
 
     def login(self, mail, passwd):
-        print(self.driver.current_url)
-        mail_field = self.wait.until(ec.presence_of_element_located((By.ID, 'identifierId')))
-        mail_field.click()
-        mail_field.send_keys(mail)
-        sleep(1)
-        mail_field.send_keys(Keys.ENTER)
-        # submit_first = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span')))
-        # submit_first.click()
+        try:
+            mail_field = self.wait.until(ec.presence_of_element_located((By.ID, 'identifierId')))
+            mail_field.click()
+            mail_field.send_keys(mail)
+            sleep(1)
+            mail_field.send_keys(Keys.ENTER)
+            # submit_first = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span')))
+            # submit_first.click()
 
-        sleep(3)
-        print(self.driver.current_url)
-        passwd_field = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input')))
-        passwd_field.click()
-        # passwd_field.send_keys(passwd)
-        # submit_second = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span')))
-        # submit_second.click()
-        chains = ActionChains(self.driver)
-        chains.send_keys(passwd + Keys.ENTER).perform()
-        sleep(1)
+            sleep(3)
+            passwd_field = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input')))
+            passwd_field.click()
+            # passwd_field.send_keys(passwd)
+            # submit_second = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span')))
+            # submit_second.click()
+            chains = ActionChains(self.driver)
+            chains.send_keys(passwd + Keys.ENTER).perform()
+            sleep(1)
+        except Exception as ex:
+            print(ex)
         try:
             not_now = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/div/c-wiz/div/div/div/div[2]/div[4]/div[1]/button/span')))
             not_now.click()
