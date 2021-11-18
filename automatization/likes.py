@@ -33,7 +33,7 @@ class YoutubeLiker:
         # }
         self.driver = webdriver.Firefox(firefox_profile=self.profile,
                                         proxy=self.firecap,
-                                        # options=self.opt,
+                                        options=self.opt,
                                         executable_path='/usr/local/bin/geckodriver'
                                         )
         self.driver.maximize_window()
@@ -59,6 +59,12 @@ class YoutubeLiker:
             chains = ActionChains(self.driver)
             chains.send_keys(passwd + Keys.ENTER).perform()
             sleep(1)
+            try:
+                phone_code = self.wait.until(ec.visibility_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/span/figure/samp')))
+                print(phone_code.text)
+                a = input('>>> ')
+            except Exception as ex:
+                print(ex)
         except Exception as ex:
             print(ex)
         try:
@@ -66,13 +72,11 @@ class YoutubeLiker:
             not_now.click()
         except Exception as ex:
             pass
-        print(self.driver.current_url)
         try:
             update = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/c-wiz[2]/c-wiz/div/div[1]/div/div/div/div[2]/div[3]/div/div[2]/div/span/span')))
             update.click()
         except Exception as ex:
             pass
-        self.driver.get('https://myaccount.google.com/?pli=1')
         try:
             welcome_msg = self.wait.until(ec.presence_of_element_located((By.XPATH, '/html/body/c-wiz/div/div[2]/c-wiz/c-wiz/div/div[3]/div/div/header/h1')))
             # welcome_msg = self.driver.find_element_by_xpath('/html/body/c-wiz/div/div[2]/c-wiz/c-wiz/div/div[3]/div/div/header/h1')

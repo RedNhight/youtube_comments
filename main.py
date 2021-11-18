@@ -33,17 +33,20 @@ def read_channels():
 
 
 def main(url: str, txt_for: str, num_of_account):
-    ca = CheckAvailability(url)
-    ca.pars_the_last_video()
-    compared_video = ca.compare_id()
-    if compared_video == 'NEW_VIDEO':
-        print('New video')
-        print(ca.video_id)
-        tyl.start_work(ca.video_id, txt_for, num_of_account)
-        print('Video was commented. ')
-    elif compared_video == 'OLD_VIDEO':
-        print(ca.video_id)
-        print('OLD')
+    try:
+        ca = CheckAvailability(url)
+        ca.pars_the_last_video()
+        compared_video = ca.compare_id()
+        if compared_video == 'NEW_VIDEO':
+            print('New video')
+            print(ca.video_id)
+            tyl.start_work(ca.video_id, txt_for, num_of_account)
+            print('Video was commented. ')
+        elif compared_video == 'OLD_VIDEO':
+            print(ca.video_id)
+            print('OLD')
+    except Exception as ex:
+        print(ex)
 
 
 if __name__ == '__main__':
