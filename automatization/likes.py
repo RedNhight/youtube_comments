@@ -26,16 +26,12 @@ class YoutubeLiker:
         self.profile.update_preferences()
         self.firecap = webdriver.DesiredCapabilities.FIREFOX
         self.firecap['marionette'] = True
-        # self.firecap['proxy'] = {
-        #     'proxyType': 'MANUAL',
-        #     'httpProxy': proxy,
-        #     'sslProxy': proxy
-        # }
         self.driver = webdriver.Firefox(firefox_profile=self.profile,
                                         proxy=self.firecap,
                                         options=self.opt,
                                         executable_path='/usr/local/bin/geckodriver'
                                         )
+
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver, 5)
         self.driver.get(self.url)
@@ -59,6 +55,7 @@ class YoutubeLiker:
             chains = ActionChains(self.driver)
             chains.send_keys(passwd + Keys.ENTER).perform()
             sleep(1)
+
             try:
                 phone_code = self.wait.until(ec.visibility_of_element_located((By.XPATH, '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/span/figure/samp')))
                 print(phone_code.text)
