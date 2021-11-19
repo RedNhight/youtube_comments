@@ -14,16 +14,15 @@ class TestYoutubeLiker:
 
         self.yl_first = YoutubeLiker()
         print('Браузер открыт')
-        self.yl_first.login(self.first_data[0], self.first_data[1])
-        # print('Первый аккаунт залогинен! ')
-
         self.yl_second = YoutubeLiker()
         print('Второй браузер открыт. ')
-        self.yl_second.login(self.second_data[0], self.second_data[1])
-        # print('Второй аккаунт залогинен! ')
-
         self.yl_third = YoutubeLiker()
         print('3-й браузер открыт.')
+
+        self.yl_first.login(self.first_data[0], self.first_data[1])
+        # print('Первый аккаунт залогинен! ')
+        self.yl_second.login(self.second_data[0], self.second_data[1])
+        # print('Второй аккаунт залогинен! ')
         self.yl_third.login(self.third_data[0], self.third_data[1])
         # print('3-й аккаунт залогинен!')
 
