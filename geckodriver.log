@@ -1,0 +1,101 @@
+1637378388441	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.qbfwrJYWUPj8"
+Gtk-Message: 03:19:48.670: Failed to load module "appmenu-gtk-module"
+1637378389759	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.FNsPRa4tUSEx"
+Gtk-Message: 03:19:49.975: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 03:19:51.422: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 03:19:51.561: Failed to load module "appmenu-gtk-module"
+1637378392496	Marionette	INFO	Listening on port 45913
+1637378392566	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637378394120	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.vKdxQlZl3TVe"
+Gtk-Message: 03:19:54.404: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 03:19:55.884: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 03:19:56.027: Failed to load module "appmenu-gtk-module"
+1637378396896	Marionette	INFO	Listening on port 46823
+1637378396935	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637378398611	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.bKHIMCujiIuv"
+Gtk-Message: 03:19:58.898: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 03:20:00.394: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 03:20:00.527: Failed to load module "appmenu-gtk-module"
+1637378401408	Marionette	INFO	Listening on port 43157
+1637378401434	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 174: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1637378437269	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yUeGXbC8p6VZ"
+Gtk-Message: 03:20:37.483: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 03:20:38.837: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 03:20:38.989: Failed to load module "appmenu-gtk-module"
+1637378439719	Marionette	INFO	Listening on port 36953
+1637378439787	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637378441640	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.DeToEHcyCoH7"
+Gtk-Message: 03:20:41.882: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 03:20:43.334: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 03:20:43.491: Failed to load module "appmenu-gtk-module"
+1637378444088	Marionette	INFO	Listening on port 41921
+1637378444151	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637378445859	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HoCetfhgSSrz"
+Gtk-Message: 03:20:46.113: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 03:20:47.545: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 03:20:47.679: Failed to load module "appmenu-gtk-module"
+1637378448436	Marionette	INFO	Listening on port 36591
+1637378448487	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 174: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1637548686530	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--no-sandbox" "--headless" "--remote-debugging-port=9224" "--disable-dev-shm-usage" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0U3dRstx66Kj"
+*** You are running in headless mode.
+1637548688453	Marionette	INFO	Listening on port 40089
+1637548688554	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1637548697190	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.itSNLwEAanpM"
+Gtk-Message: 02:38:17.387: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:38:18.637: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:38:18.774: Failed to load module "appmenu-gtk-module"
+1637548699431	Marionette	INFO	Listening on port 41171
+1637548699496	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637548701365	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.tVyp4NIKWbj4"
+Gtk-Message: 02:38:21.579: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:38:22.873: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:38:23.005: Failed to load module "appmenu-gtk-module"
+1637548703708	Marionette	INFO	Listening on port 32833
+1637548703774	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637548705558	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0zo4avdP55kH"
+Gtk-Message: 02:38:25.821: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:38:27.159: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 02:38:27.344: Failed to load module "appmenu-gtk-module"
+1637548708035	Marionette	INFO	Listening on port 43435
+1637548708076	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 174: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+Exiting due to channel error.
+Exiting due to channel error.
