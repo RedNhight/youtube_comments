@@ -24,7 +24,7 @@ class YoutubeLiker:
         # Options.
         self.ua = UserAgent()
         self.opt = Options()
-        # self.opt.add_argument('--headless')
+        self.opt.add_argument('--headless')
         # self.opt.add_argument('--remote-debugging-port=9224')
         # self.opt.add_argument('--disable-dev-shm-usage')
         self.profile = webdriver.FirefoxProfile()
@@ -47,6 +47,7 @@ class YoutubeLiker:
                                         options=self.opt,
                                         executable_path='/usr/local/bin/geckodriver'
                                         )
+        self.driver.delete_all_cookies()
 
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver, 5)
