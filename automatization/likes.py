@@ -19,7 +19,7 @@ from time import sleep
 
 class YoutubeLiker:
     def __init__(self):
-        self.url = 'https://accounts.google.com/signin/v2/identifier'
+        self.url = 'https://accounts.google.com/signin/v2/identifier?hl=en&%3B&flowName=GlifWebSignIn&flowEntry=ServiceLogin'
 
         # Options.
         self.ua = UserAgent()
@@ -33,16 +33,17 @@ class YoutubeLiker:
         self.profile.set_preference("browser.cache.memory.enable", False)
         self.profile.set_preference("browser.cache.offline.enable", False)
         self.profile.set_preference("network.http.use-cache", False)
+        self.profile.set_preference("browser.privatebrowsing.autostart", True)
 
         self.profile.set_preference('dom.webdriver.enabled', False)
         self.profile.set_preference('useAutomationExtension', False)
         self.profile.set_preference("intl.accept_languages", "en-en")
         self.profile.set_preference("media.volume_scale", "0.0")
         self.profile.update_preferences()
-        # self.firecap = webdriver.DesiredCapabilities.FIREFOX
-        # self.firecap['marionette'] = True
+        self.firecap = webdriver.DesiredCapabilities.FIREFOX
+        self.firecap['marionette'] = True
         self.driver = webdriver.Firefox(firefox_profile=self.profile,
-                                        # proxy=self.firecap,
+                                        proxy=self.firecap,
                                         options=self.opt,
                                         executable_path='/usr/local/bin/geckodriver'
                                         )

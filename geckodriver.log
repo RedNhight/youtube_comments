@@ -7209,3 +7209,61 @@ Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1637976112933	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--incognito" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.XDaj8Iie2Tbh"
+Gtk-Message: 01:21:53.134: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:21:54.407: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:21:54.540: Failed to load module "appmenu-gtk-module"
+1637976115083	Marionette	INFO	Listening on port 37647
+1637976115139	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637976117199	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--incognito" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wnSx1k78PqR0"
+Gtk-Message: 01:21:57.492: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:21:58.093: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:21:58.923: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:21:59.077: Failed to load module "appmenu-gtk-module"
+1637976119687	Marionette	INFO	Listening on port 37995
+1637976119716	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 288: NS_ERROR_FAILURE: Should pass a non-null uri
+1637976121430	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--incognito" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.X5qsFaaxuqoY"
+Gtk-Message: 01:22:01.675: Failed to load module "appmenu-gtk-module"
+Traceback (most recent call last):
+  File "/usr/bin/lsb_release", line 20, in <module>
+    from optparse import OptionParser
+  File "/usr/lib/python3.9/optparse.py", line 77, in <module>
+    import textwrap
+  File "/usr/lib/python3.9/textwrap.py", line 17, in <module>
+    class TextWrapper:
+  File "/usr/lib/python3.9/textwrap.py", line 81, in TextWrapper
+    wordsep_re = re.compile(r'''
+  File "/usr/lib/python3.9/re.py", line 252, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.9/re.py", line 304, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python3.9/sre_compile.py", line 764, in compile
+    p = sre_parse.parse(p, flags)
+  File "/usr/lib/python3.9/sre_parse.py", line 948, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/usr/lib/python3.9/sre_parse.py", line 443, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.9/sre_parse.py", line 834, in _parse
+    p = _parse_sub(source, state, sub_verbose, nested + 1)
+  File "/usr/lib/python3.9/sre_parse.py", line 443, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.9/sre_parse.py", line 834, in _parse
+    p = _parse_sub(source, state, sub_verbose, nested + 1)
+  File "/usr/lib/python3.9/sre_parse.py", line 443, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.9/sre_parse.py", line 693, in _parse
+    char = sourceget()
+  File "/usr/lib/python3.9/sre_parse.py", line 256, in get
+    self.__next()
+  File "/usr/lib/python3.9/sre_parse.py", line 247, in __next
+    self.index = index + 1
+KeyboardInterrupt
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
