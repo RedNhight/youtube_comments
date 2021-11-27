@@ -6,8 +6,8 @@ from selenium import webdriver
 from fake_useragent import UserAgent
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-# from selenium.webdriver.firefox.options import Options
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
+# from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.common.action_chains import ActionChains
@@ -22,39 +22,32 @@ class YoutubeLiker:
         self.url = 'https://accounts.google.com/signin/v2/identifier?hl=en&%3B&flowName=GlifWebSignIn&flowEntry=ServiceLogin'
 
         # Options.
-        self.opt = webdriver.ChromeOptions()
-        # self.opt.add_argument('--headless')
-        self.opt.add_argument('--no-sandbox')
-        # self.ua = UserAgent()
-        # self.opt = Options()
-        # self.opt.add_argument('--headless')
-        # # self.opt.add_argument('--remote-debugging-port=9224')
-        # # self.opt.add_argument('--disable-dev-shm-usage')
-        # self.profile = webdriver.FirefoxProfile()
-        #
-        # self.profile.set_preference("browser.cache.disk.enable", False)
-        # self.profile.set_preference("browser.cache.memory.enable", False)
-        # self.profile.set_preference("browser.cache.offline.enable", False)
-        # self.profile.set_preference("network.http.use-cache", False)
-        # self.profile.set_preference("browser.privatebrowsing.autostart", True)
-        #
-        # self.profile.set_preference('dom.webdriver.enabled', False)
-        # self.profile.set_preference('useAutomationExtension', False)
-        # self.profile.set_preference("intl.accept_languages", "en-en")
-        # self.profile.set_preference("media.volume_scale", "0.0")
-        # self.profile.update_preferences()
-        # self.firecap = webdriver.DesiredCapabilities.FIREFOX
-        # self.firecap['marionette'] = True
-        # self.driver = webdriver.Firefox(firefox_profile=self.profile,
-        #                                 proxy=self.firecap,
-        #                                 options=self.opt,
-        #                                 executable_path='/usr/local/bin/geckodriver'
-        #                                 )
-        self.driver = webdriver.Chrome(
-            options=self.opt,
+        self.ua = UserAgent()
+        self.opt = Options()
+        self.opt.add_argument('--headless')
+        self.opt.add_argument('--remote-debugging-port=9224')
+        self.opt.add_argument('--disable-dev-shm-usage')
+        self.profile = webdriver.FirefoxProfile()
 
-        )
-        # self.driver.delete_all_cookies()
+        self.profile.set_preference("browser.cache.disk.enable", False)
+        self.profile.set_preference("browser.cache.memory.enable", False)
+        self.profile.set_preference("browser.cache.offline.enable", False)
+        self.profile.set_preference("network.http.use-cache", False)
+        self.profile.set_preference("browser.privatebrowsing.autostart", True)
+
+        self.profile.set_preference('dom.webdriver.enabled', False)
+        self.profile.set_preference('useAutomationExtension', False)
+        self.profile.set_preference("intl.accept_languages", "en-en")
+        self.profile.set_preference("media.volume_scale", "0.0")
+        self.profile.update_preferences()
+        self.firecap = webdriver.DesiredCapabilities.FIREFOX
+        self.firecap['marionette'] = True
+        self.driver = webdriver.Firefox(firefox_profile=self.profile,
+                                        proxy=self.firecap,
+                                        options=self.opt,
+                                        executable_path='/usr/local/bin/geckodriver'
+                                        )
+        self.driver.delete_all_cookies()
 
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver, 5)
