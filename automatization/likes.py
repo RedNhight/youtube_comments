@@ -19,13 +19,12 @@ from time import sleep
 
 class YoutubeLiker:
     def __init__(self):
-        self.url = 'https://stackoverflow.com/users/signup?ssrc=head&returnurl=%2fusers%2fstory%2fcurrent%27'
-        # self.url = 'https://accounts.google.com/signin/v2/identifier'
+        self.url = 'https://accounts.google.com/signin/v2/identifier'
 
         # Options.
         self.ua = UserAgent()
         self.opt = Options()
-        self.opt.add_argument('--headless')
+        # self.opt.add_argument('--headless')
         # self.opt.add_argument('--remote-debugging-port=9224')
         # self.opt.add_argument('--disable-dev-shm-usage')
         self.profile = webdriver.FirefoxProfile()
@@ -53,11 +52,6 @@ class YoutubeLiker:
         self.driver.get(self.url)
 
     def login(self, mail, passwd):
-        try:
-            g_btn = self.wait.until(ec.element_to_be_clickable((By.XPATH, '/html/body/div[3]/div[2]/div/div[2]/div[2]/button[1]')))
-            g_btn.click()
-        except Exception as ex:
-            pass
         try:
             print(self.driver.current_url)
             mail_field = self.wait.until(ec.presence_of_element_located((By.ID, 'identifierId')))
