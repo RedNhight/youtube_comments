@@ -23,7 +23,7 @@ class YoutubeLiker:
 
         # Options.
         self.opt = webdriver.ChromeOptions()
-        self.opt.add_argument('--headless')
+        # self.opt.add_argument('--headless')
         self.opt.add_argument('--no-sandbox')
         # self.ua = UserAgent()
         # self.opt = Options()
@@ -50,6 +50,10 @@ class YoutubeLiker:
         #                                 options=self.opt,
         #                                 executable_path='/usr/local/bin/geckodriver'
         #                                 )
+        self.driver = webdriver.Chrome(
+            options=self.opt,
+
+        )
         # self.driver.delete_all_cookies()
 
         self.driver.maximize_window()
