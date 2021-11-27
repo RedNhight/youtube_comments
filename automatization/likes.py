@@ -24,7 +24,7 @@ class YoutubeLiker:
         # Options.
         self.ua = UserAgent()
         self.opt = Options()
-        self.opt.add_argument('--headless')
+        # self.opt.add_argument('--headless')
         # self.opt.add_argument('--remote-debugging-port=9224')
         # self.opt.add_argument('--disable-dev-shm-usage')
         self.profile = webdriver.FirefoxProfile()
@@ -117,7 +117,7 @@ class YoutubeLiker:
             print(ex)
         try:
             sleep(2)
-            self.driver.execute_script('window.scrollBy(0, 300)', '')
+            self.driver.execute_script('window.scrollBy(0, 600)', '')
             comment_field = self.wait.until(ec.presence_of_element_located((By.ID, 'simplebox-placeholder')))
             comment_field.click()
 
