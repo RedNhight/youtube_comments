@@ -1,3 +1,4 @@
+from pyvirtualdisplay import Display
 from automatization.likes import YoutubeLiker
 
 
