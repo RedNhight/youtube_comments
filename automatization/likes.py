@@ -1,5 +1,5 @@
 # Local imports
-from .gologin import GoLogin
+from .gologin_test import GoLogin
 
 # Selenium imports
 import fake_useragent
@@ -21,28 +21,15 @@ from time import sleep
 
 class YoutubeLiker:
     def __init__(self):
-        self.url = 'https://accounts.google.com/signin/v2/identifier?hl=en&%3B&flowName=GlifWebSignIn&flowEntry=ServiceLogin'
-        # GoLogin settings
-        self.gl = GoLogin({
-            'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MWEyYzE1MjNkMGU2NGYwMzAxMzdjMTciLCJ0eXBlIjoiZGV2Iiwiand0aWQiOiI2MWEyYzFlYjYxYzRkYzAzMTVjNzU3YTUifQ.eHRkJpR_d7kN4hPXdRJXqjo2jUs1dYHnjg9LzfX661w',
-            'profile_id': '61a2c1533d0e648c3c137c19'
-        })
-        self.debugger = self.gl.start()
-        self.opt = Options()
-        self.opt.add_experimental_option('debuggerAddress', self.debugger)
-        self.driver = webdriver.Chrome(
-            chrome_options=self.opt,
-            executable_path='/usr/bin/chromedriver'
-        )
-
+        self.url = 'https://accounts.google.com/signin/v2/identifier'
         # Options.
         # self.ua = UserAgent()
-        # self.opt = Options()
-        # self.opt.add_argument('--headless')
+        self.opt = Options()
+        self.opt.add_argument('--headless')
         # self.opt.add_argument('--remote-debugging-port=9224')
         # self.opt.add_argument('--disable-dev-shm-usage')
         # self.profile = webdriver.FirefoxProfile()
-        #
+
         # self.profile.set_preference("browser.cache.disk.enable", False)
         # self.profile.set_preference("browser.cache.memory.enable", False)
         # self.profile.set_preference("browser.cache.offline.enable", False)
@@ -56,12 +43,12 @@ class YoutubeLiker:
         # self.profile.update_preferences()
         # self.firecap = webdriver.DesiredCapabilities.FIREFOX
         # self.firecap['marionette'] = True
-        # self.driver = webdriver.Firefox(firefox_profile=self.profile,
-        #                                 proxy=self.firecap,
-        #                                 options=self.opt,
-        #                                 executable_path='/usr/local/bin/geckodriver'
-        #                                 )
-        # self.driver.delete_all_cookies()
+        self.driver = webdriver.Firefox(
+                                        # firefox_profile=self.profile,
+                                        # proxy=self.firecap,
+                                        options=self.opt,
+                                        executable_path='/usr/local/bin/geckodriver'
+                                        )
 
         self.driver.maximize_window()
         self.wait = WebDriverWait(self.driver, 5)
