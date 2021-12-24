@@ -1,0 +1,91 @@
+1640390129737	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--ignore-certificate-errors" "--unsafely-treat-insecure-origin-as-secure" "--no-default-browser-check" "--disable-web-security" "--disable-gpu" "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" "--start-maximized" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.iGHliZ8Yu9Ni"
+Gtk-Message: 01:55:29.892: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:55:31.187: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:55:31.279: Failed to load module "appmenu-gtk-module"
+1640390131813	Marionette	INFO	Listening on port 42731
+1640390131844	Marionette	WARN	TLS certificate errors will be ignored for this session
+1640390131963	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--ignore-certificate-errors" "--unsafely-treat-insecure-origin-as-secure" "--no-default-browser-check" "--disable-web-security" "--disable-gpu" "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" "--start-maximized" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.p0tdjxtFgFju"
+Gtk-Message: 01:55:32.121: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:55:33.008: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:55:33.108: Failed to load module "appmenu-gtk-module"
+1640390133602	Marionette	INFO	Listening on port 42067
+1640390133667	Marionette	WARN	TLS certificate errors will be ignored for this session
+1640390133729	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--ignore-certificate-errors" "--unsafely-treat-insecure-origin-as-secure" "--no-default-browser-check" "--disable-web-security" "--disable-gpu" "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" "--start-maximized" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dsAqMHtF50w2"
+Gtk-Message: 01:55:33.898: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:55:34.795: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:55:34.888: Failed to load module "appmenu-gtk-module"
+1640390135436	Marionette	INFO	Listening on port 36421
+1640390135536	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 174: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1640390218332	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" "--remote-debugging-port=9224" "--disable-dev-shm-usage" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HJRYmFFuDi8C"
+Gtk-Message: 01:56:58.463: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:56:59.365: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:56:59.451: Failed to load module "appmenu-gtk-module"
+1640390219988	Marionette	INFO	Listening on port 44337
+1640390220060	Marionette	WARN	TLS certificate errors will be ignored for this session
+1640390220112	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" "--remote-debugging-port=9224" "--disable-dev-shm-usage" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.LjqTh5hOyEp8"
+Gtk-Message: 01:57:00.255: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:57:01.168: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:57:01.246: Failed to load module "appmenu-gtk-module"
+1640390221841	Marionette	INFO	Listening on port 37197
+1640390221923	Marionette	WARN	TLS certificate errors will be ignored for this session
+1640390221994	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" "--remote-debugging-port=9224" "--disable-dev-shm-usage" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.OvAsmmMhFuYx"
+Gtk-Message: 01:57:02.139: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:57:02.974: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:57:03.082: Failed to load module "appmenu-gtk-module"
+1640390223979	Marionette	INFO	Listening on port 45397
+1640390224010	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 174: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1640390242990	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--remote-debugging-port=9224" "--disable-dev-shm-usage" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Td4yCkBU3mxY"
+Gtk-Message: 01:57:23.127: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:57:23.984: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:57:24.084: Failed to load module "appmenu-gtk-module"
+1640390244588	Marionette	INFO	Listening on port 40749
+1640390244598	Marionette	WARN	TLS certificate errors will be ignored for this session
+1640390244665	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--remote-debugging-port=9224" "--disable-dev-shm-usage" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.NE9aXLHXpRtR"
+Gtk-Message: 01:57:24.861: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:57:25.786: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:57:25.871: Failed to load module "appmenu-gtk-module"
+1640390246370	Marionette	INFO	Listening on port 39647
+1640390246513	Marionette	WARN	TLS certificate errors will be ignored for this session
+1640390246574	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--remote-debugging-port=9224" "--disable-dev-shm-usage" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.QjblV17Bch3X"
+Gtk-Message: 01:57:26.729: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:57:27.631: Failed to load module "appmenu-gtk-module"
+Gtk-Message: 01:57:27.731: Failed to load module "appmenu-gtk-module"
+1640390247954	Marionette	INFO	Listening on port 33583
+1640390248000	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 208: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 174: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 208}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
